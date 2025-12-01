@@ -15,9 +15,6 @@
     Define custom search window, this is done in days. Example below collects the Security Events from the last 10 days.
     .\DFIR-Script.ps1 -sw 10
 
-.LINK
-    Integration Defender For Endpoint Live Response: 
-    https://github.com/Bert-JanP/Incident-Response-Powershell & https://kqlquery.com/posts/leveraging-live-response/
     
     Individual PowerShell Incident Response Commands: 
     https://github.com/Bert-JanP/Incident-Response-Powershell/blob/main/DFIR-Commands.md
@@ -39,7 +36,6 @@ $ASCIIBanner = @"
 "@
 Write-Host $ASCIIBanner -ForegroundColor Cyan
 Write-Host "Version: $Version" -ForegroundColor Cyan
-Write-Host "Developed by Bert-Jan Pals | Twitter: @BertJanCyber | Github: Bert-JanP" -ForegroundColor Cyan
 Write-Host "===========================================" -ForegroundColor Black
 $HostName = $env:COMPUTERNAME
 $OSProductName = (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion' -Name 'ProductName').ProductName
